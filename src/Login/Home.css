@@ -1,0 +1,14 @@
+.btnWrap{
+  /* background-color: pink; */
+  display: flex;
+  width:20%;
+  justify-content:space-between;
+  flex-wrap: wrap;
+  float: left;
+  padding-top: 1%;
+  padding-left: 2%;
+
+}
+.btns{
+  width:45%;
+}
