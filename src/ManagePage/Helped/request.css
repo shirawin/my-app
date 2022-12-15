@@ -1,11 +1,12 @@
 .main{
-    width: 85%;
+    direction:rtl;
+     width: 50%; 
     display: flex;
     flex-direction: column; 
     /* background-color:aquamarine; */
     flex-wrap: wrap;
     padding-bottom: 0.5%;
-    padding-right: 3%;
+    float:right;
 } 
 h3{
   color: #a1a1a1;
@@ -31,6 +32,24 @@ h3{
   padding-right:2.4%;
   /* background-color:red; */
 }
+.form-group-r{
+  width:50%;
+  display: flex;
+  justify-content:space-between;
+  /* background-color:springgreen;  */
+  flex-wrap: wrap;
+  padding-right: 2.5%;
+
+}
+.form-group2-r{
+  width:32.3%;
+  display: flex;
+  justify-content:space-between;
+  /* background-color:red;  */
+  flex-wrap: wrap;
+  padding-right:2.5%;
+
+}
 .passReq{
     padding-right:1%;
     padding-top:1%;
@@ -38,13 +57,14 @@ h3{
 }
 .okDivWrap{
     /* background-color:green; */
-    width:30%;
-    /* float: left; */
+    width:60%;
+    float: left;
     padding-top: 3%;
+    padding-left: 10;
 }
 .okReq{
-    padding-top: 10%;
+    padding-top: 12%;
     height: 7vh;
     width: 10vw;
-    float: left;
+    float: right;
 }
