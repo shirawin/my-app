@@ -5,6 +5,7 @@ import SignUp from './signUp';
 // import Adv from '../ManagePage/Helped/adv';
 import Request from '../ManagePage/Helped/request'
 import './Home.css'
+import UpdateDetails from '../PersonalArea/UpdateDetails'
 
 
 const Home =()=>{
@@ -22,15 +23,14 @@ const hideSignUp =()=>{
 }
 return (
     <>
-
-//     {showBtns&&
+    <UpdateDetails/> 
+   {/* {showBtns&&
     <div className="btnWrap" row>
-    <Button style={{backgroundColor: '#ff9100' , color:'white'}} className='btns' onClick={(hideSignIn)}>
-        התחברות
-    </Button>
-    
     <Button style={{backgroundColor: '#ff9100', color:'white'}} className='btns' onClick={(hideSignUp)}>
         הרשמה
+    </Button>
+    <Button style={{backgroundColor: '#ff9100' , color:'white'}} className='btns' onClick={(hideSignIn)}>
+        התחברות
     </Button>
     </div>
     }
@@ -39,7 +39,7 @@ return (
     }
     {signUp&&
     <SignUp/>
-    }
+    } */}
     </>
 )
 }
