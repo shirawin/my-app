@@ -1,12 +1,26 @@
-import React from 'react'
+import React ,{ useState } from 'react'
 import TextField from '@mui/material/TextField';
-import Button from '@mui/material/Button';
+import {Button,Box} from '@mui/material';
 import './logIn.css'
 import { Grid } from '@mui/material';
+import { useNavigate } from 'react-router-dom'
 
 const SignIn =()=>{
+  
+const [logIn, setLogIn] =useState({ userName: "", password: "" });
+const navigate = useNavigate();
+const handleSubmit = async (e) => {
+  
+    e.preventDefault();
+   
+      // const response = await axios.post(`${hh}`,body);
+      localStorage.setItem("uuid", 9);
+    navigate("/ManagePage")
+   
+  }
+
 return (
-    <div dir='rtl'>
+    <Box component="form" onSubmit={handleSubmit} dir='rtl'>
         <h1>כניסה למערכת</h1>
         <div className='div-personal-detailes'>
         <TextField id="outlined-basic" label="שם" variant="outlined"  />
@@ -15,10 +29,9 @@ return (
 
         <div className='ok-div-Wrap'>
                     <span></span>
-                    <Button style={{backgroundColor: '#ff9100'}} className='ok' variant="contained" onClick={()=>{
-                        alert('האם אתה בטוח?')} }>אישור</Button>
+                    <Button style={{backgroundColor: '#ff9100'}} className='ok' variant="contained" type='submit'>אישור</Button>
     </div>
-    </div>
+    </Box>
     
     
 );
