@@ -45,17 +45,17 @@ const Request=()=>{
             </div>
             <div >
                  <h3 className='title'>סמן את הנדרש עבורך:</h3>
-                 <FormGroup row className='form-group'>
+                 <FormGroup row className='form-group-r'>
                  <FormControlLabel control={<Checkbox style={{color: '#ff9100'}}/>} label="אופנוע" />
                  <FormControlLabel control={<Checkbox style={{color: '#ff9100'}}/>} label="רכב פרטי" />
                  <FormControlLabel control={<Checkbox style={{color: '#ff9100'}}/>} label="אמבולנס" />
                  </FormGroup>
-                 <FormGroup row className='form-group2'>
+                 <FormGroup row className='form-group2-r'>
                    <FormControlLabel control={<Checkbox style={{color: '#ff9100'}}/>} label="מעלון" />
                    <FormControlLabel control={<Checkbox style={{color: '#ff9100'}}/>} label="כסא תינוק" />
                 </FormGroup>
                 <div className='passReq' >
-                <label>מספר נוסעים</label>
+                <label>מספר נוסעים</label>&nbsp;&nbsp;
                 <NativeSelect
                  defaultValue={0}
                  inputProps={{
@@ -72,6 +72,7 @@ const Request=()=>{
                 </NativeSelect>
                 </div> 
                  <div className='okDivWrap'>
+                  <br/>
                     <Button style={{backgroundColor: '#ff9100'}} className='okReq' variant="contained" onClick={()=>{
                         alert('האם אתה בטוח?')} }>שלח בקשה</Button>
                  </div>

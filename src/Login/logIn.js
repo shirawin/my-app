@@ -2,13 +2,14 @@ import React from 'react'
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import './logIn.css'
+import { Grid } from '@mui/material';
 
 const SignIn =()=>{
 return (
-    <div>
+    <div dir='rtl'>
         <h1>כניסה למערכת</h1>
         <div className='div-personal-detailes'>
-        <TextField id="outlined-basic" label="שם" variant="outlined" />
+        <TextField id="outlined-basic" label="שם" variant="outlined"  />
         <TextField id="outlined-basic" label="סיסמה" variant="outlined"   type='password'/>
         </div>
 

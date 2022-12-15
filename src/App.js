@@ -4,11 +4,20 @@ import Home from './Login/Home';
 import { BrowserRouter as Router,Routes, Route, Link } from 'react-router-dom';
 import PersonalArea from './PersonalArea/PersonalArea';
 import ManagePage from './ManagePage/ManagePage';
+import rtlPlugin from "stylis-plugin-rtl";
+import { prefixer } from 'stylis';
+import { CacheProvider } from '@emotion/react';
+import createCache from "@emotion/cache";
 
+// Create rtl cache
+const cacheRtl = createCache({
+  key: "muirtl",
+  stylisPlugins: [prefixer, rtlPlugin],
+});
 
 function App() {
   return (
-    <div dir='rtl'>
+    <CacheProvider value={cacheRtl}>
       <Router>
            <div >
             <ul >
@@ -30,7 +39,7 @@ function App() {
           </div>
        </Router>
    
-    </div>
+       </CacheProvider>
   );
 }
 
